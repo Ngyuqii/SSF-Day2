@@ -1,0 +1,5 @@
+package SSF.WS12.exception;
+
+public class RandNumException extends RuntimeException {
+    private static final long serialVersionUID = 1L;
+}
