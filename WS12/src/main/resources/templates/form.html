@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body>
     <h1>How many numbers do you wish to generate?</h1>
+    
     <form
         action="#"
-        data-th-action="@{/rand/generate}"
-        data-th-object="${generateObj}"
+        data-th-action="@{/generate/result}" target="_blank"
+        data-th-object="${randNumGenerator}"
         method="post">
-    <p>
-        <input type="text" data-th-field="*{numberVal}"/>
-        <input type="submit" value="Generate"/>    
-    </p>
+
+        <input type="number" data-th-field="*{n}" min="1" max="30"/><br><br>
+        <input type="Reset"/>
+        <input type="submit" value="Generate"/>  
     </form>
-    
 </body>
 </html>

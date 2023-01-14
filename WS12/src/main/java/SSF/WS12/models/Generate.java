@@ -5,7 +5,10 @@ public class Generate {
     //Numbers of random values n
     private int n;
 
-    //Constructor
+    //Constructors
+    public Generate() {
+    }
+
     public Generate(int n) {
         this.n = n;
     }

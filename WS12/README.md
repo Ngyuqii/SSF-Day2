@@ -7,4 +7,4 @@ Task 2
 The backend controller will randomly generate a list of non-duplicate numbers (n) according to the client’s request. The numbers are then displayed with number images.
 
 Task 3
-Deploy the application to Railway
+Deploy the application to Railway (change to java version 11).

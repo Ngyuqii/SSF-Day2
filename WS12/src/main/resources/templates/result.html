@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Result</title>
 </head>
 <body>
-    
+    <h1>Your list of <span data-th-text="${noOfRandomNum}"></span> random numbers</h1>
+
+    <span data-th-each="numberImg : ${randNumResult}">
+        <img data-th-src="@{${'/images/' + numberImg}}" width="180" height="180"/>
+    </span>
+
+    <p> The generated numbers are <span data-th-each="number : ${randNum}">
+        <span data-th-text="${number}"></span>
+    </span>.
+    </p>
 </body>
 </html>
