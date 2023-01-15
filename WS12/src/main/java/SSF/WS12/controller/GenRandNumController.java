@@ -39,7 +39,17 @@ public class GenRandNumController {
         return "result";
     }
 
-    /* Alternatively use @ModelAttribute
+    /*Alt1 use HttpServletRequest
+
+    @PostMapping(path="/result")
+    public String showRandNum(HttpServletRequest request, Model model){
+        Integer n = Integer.parseInt(request.getParameter("n"));
+        randomNum(model, n);
+        return "result";
+    }
+    */
+
+    /* Alt2 use @ModelAttribute
 
     @PostMapping(path="/result")
     public String showRandNum(@ModelAttribute Generate g, Model model){
