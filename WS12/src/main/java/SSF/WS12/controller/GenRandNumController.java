@@ -58,6 +58,7 @@ public class GenRandNumController {
     }
     */
 
+    //Path variable
     @GetMapping(path="/result/{n}")
     public String generateRandNum(@PathVariable Integer n, Model model){
         randomNum(model, n);
